@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Fandom Coders',
   url: 'https://Fandom-Coders.github.io',
-  baseUrl: '/',
+  baseUrl: '/fandom-coders-wiki/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
