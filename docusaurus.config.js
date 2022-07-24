@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fandom Coders',
-  url: 'https://Fandom-Coders.github.io',
+  url: 'https://fandom-coders.github.io',
   baseUrl: '/fandom-coders-wiki/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -15,7 +15,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Fandom-Coders', // Usually your GitHub org/user name.
+  organizationName: 'fandom-coders', // Usually your GitHub org/user name.
   projectName: 'fandom-coders-wiki', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
