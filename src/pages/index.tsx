@@ -33,7 +33,7 @@ function HomepageHeader() {
             </Link>
           </div>
         </div>
-        <img src="/img/ifthen.png" className={styles.heroLogo}/>
+        <img src="img/ifthen.png" className={styles.heroLogo}/>
       </div>
     </header>
   );
