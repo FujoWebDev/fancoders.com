@@ -1,14 +1,36 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 export default function HomepageJoin(): JSX.Element {
   return (
-    <section className={styles.who}><a id="who"></a>
+    <section className={styles.who}>
+      <a id="who"></a>
       <div className="container padding-top--lg">
         <h2>Who Are We?</h2>
-        <p>Fandom Coders is a community of tech professionals and coding hobbyists who have gathered together to share and discuss their coding projects, get help, learn something new, and help shape the fandom internet we want to see. We welcome coders of all experience levels - from those just getting started to those who have been in the tech industry for years - and any interests - whether you want to create site skins/themes, build a personal web page, or create an app. Current favorite topics are Open Source projects, decentralization, and the changing shape of fandom social media.</p>
-        <p>WThe website serves as a member hub and a place to host our wiki; the wiki is a group project of all of our members - a crowd-sourced resource for fandom coders of varying levels. We hope to provide easy to follow tutorials and resources for as many programming languages as our members have experience with.</p>
+        <p>
+          Fandom Coders is a community where tech professionals and coding
+          hobbyists alike can share and discuss their coding projects, find help
+          getting started or unblocked, and learn new skills and concepts. Among
+          others goals, Fandom Coders aims to increase coding literacy in
+          fandom, and to connect fandom builders with each other to create and
+          shape the fandom internet they want to see.
+        </p>
+        <p>
+          Fandom Coders welcomes coders of all experience levels and interests:
+          from those just getting started to those who have been in the tech
+          industry for years; from those who want to create site skins/themes or
+          build a personal web page, to those who want to create an app or
+          dabble in data analysis. Current favorite topics include Open Source,
+          decentralization, and the changing shape of fandom social media.
+        </p>
+        <p>
+          This website serves as a member hub and a place to host our wiki; the
+          wiki is a group project of all of our members - a crowd-sourced
+          resource for fandom coders of varying levels. We hope to provide
+          easy-to-follow tutorials and resources specifically tailored to the
+          needs of fandom people.
+        </p>
       </div>
     </section>
   );
