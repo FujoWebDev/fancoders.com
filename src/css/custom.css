@@ -99,10 +99,13 @@ html[data-theme='dark'] {
 }
 
 /* Sets footer and navbar colors */
+.footer {
+  background-color: transparent;
+}
+
 html[data-theme='dark'] .footer,
 html[data-theme='dark'] .navbar,
 html[data-theme='dark'] .navbar-sidebar {
-  background-color: #21222C;
   --ifm-footer-title-color: #bd93f9 !important;
   --ifm-footer-link-color: #f8f8f2;
 }
@@ -110,7 +113,6 @@ html[data-theme='dark'] .navbar-sidebar {
 html[data-theme='light'] .footer,
 html[data-theme='light'] .navbar,
 html[data-theme='light'] .navbar-sidebar {
-  background-color: #F2F2F2;
   --ifm-footer-title-color: #AD39AB !important;
   --ifm-footer-link-color: #000000 !important;
 }
