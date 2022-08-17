@@ -39,7 +39,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.dev/Fandom-Coders/fandom-coders-wiki/',
+            'https://github.dev/Fandom-Coders/fandom-coders.github.io',
         },
         blog: false,
         theme: {
