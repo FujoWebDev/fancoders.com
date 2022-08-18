@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fandom Coders',
-  url: 'https://fandom-coders.github.io',
+  url: "https://www.fancoders.com/",
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,7 +17,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'fandom-coders', // Usually your GitHub org/user name.
   projectName: 'fandom-coders.github.io', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: "main",
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
