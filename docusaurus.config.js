@@ -39,9 +39,23 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.dev/Fandom-Coders/fandom-coders.github.io',
+            'https://github.dev/Fandom-Coders/fancoders.com',
         },
-        blog: false,
+        blog: {
+          path: 'blog',
+          blogTitle: 'Fandom Coders Blog',
+          blogDescription: 'Tech and coding posts from the members of Fandom Coders.',
+          blogSidebarCount: 5,
+          blogSidebarTitle: 'Recent',
+          routeBasePath: 'blog',
+          postsPerPage: 10,
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            title: 'Fandom Coders Blog',
+            description: 'Tech and coding posts from the members of Fandom Coders.'
+          },
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -69,6 +83,11 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Wiki',
+          },
+          {
+            to: 'blog',
+            label: 'Blog',
+            position: 'left'
           },
           {
             href: 'https://github.com/Fandom-Coders',
