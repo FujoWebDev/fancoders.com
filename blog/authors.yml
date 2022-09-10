@@ -1,17 +1,12 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+# If you will be a regular contributor to the blog/wiki please add your information
+# here alphabetically according to the name you want to use on the blog.
+# All entries should be formatted as follows
+# frontmatterName:
+#   name: [author name]
+#   url: [website, github, or other social link you want to be known by]
+#   image_url: [direct link for an avatar/image/profile pic]
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+enigmalea:
+  name: enigmalea
+  url: https://enigmalea.neocities.org
+  image_url: https://enigmalea.neocities.org/img/favicon.png

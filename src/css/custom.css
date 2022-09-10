@@ -58,6 +58,7 @@
   --ifm-font-family-base: 'Comfortaa', sans-serif;
   --ifm-font-family-monospace: 'Victor Mono', 'Courier New', monospace;
   --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-footer-color: #000000;
 }
 
@@ -119,7 +120,7 @@ html[data-theme='light'] .navbar-sidebar {
 
 /* Sets hero background color. */
 html[data-theme='light'] .hero--dark {
-  background-color: #b8b8b8;
+  background-color: #dadada;
 }
 
 html[data-theme='dark'] .hero--dark {
@@ -156,3 +157,28 @@ html[data-theme='dark'] .button.button--custom.button--outline:not(.button--acti
   border: var(--ifm-button-border-width) solid  #8be9fd;
 }
 
+@media screen and (max-width:900px) {
+  .button.button--secondary, .button.button--custom {
+    max-width: 33vw;
+  }
+}
+
+
+/* Header sizes for mobile */
+@media screen and (max-width:900px) {
+  h1 {
+    font-size: 1.902em;
+  }
+
+  h2 {
+    font-size: 1.424em;
+  }
+
+  h3 {
+    font-size: 1.266em;
+  }
+
+  h4 {
+    font-size: 1.125em;
+  }
+}
