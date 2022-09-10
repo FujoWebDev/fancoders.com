@@ -157,15 +157,8 @@ html[data-theme='dark'] .button.button--custom.button--outline:not(.button--acti
   border: var(--ifm-button-border-width) solid  #8be9fd;
 }
 
-@media screen and (max-width:900px) {
-  .button.button--secondary, .button.button--custom {
-    max-width: 33vw;
-  }
-}
-
-
 /* Header sizes for mobile */
-@media screen and (max-width:900px) {
+@media screen and (max-width:996px) {
   h1 {
     font-size: 1.902em;
   }
