@@ -15,13 +15,16 @@ export default function HomepageJoin(): JSX.Element {
         </p>
         <p>
           If you're interested in joining us, you can sign up through this form:
-          <form name="fandom-coders-signup" method="POST" data-netlify="true">
+          <form
+            name="fandom-coders-signup"
+            method="POST"
+            data-netlify="true"
+            action="#"
+          >
             <label>
               Your Email: <input type="email" name="email" />
             </label>
-            <button name="submit" type="submit">
-              Send
-            </button>
+            <button type="submit">Send</button>
           </form>
         </p>
         <p>
