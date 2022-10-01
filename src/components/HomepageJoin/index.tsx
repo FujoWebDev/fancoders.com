@@ -22,7 +22,7 @@ export default function HomepageJoin(): JSX.Element {
               e.preventDefault();
               const formData = new FormData(e.currentTarget);
               fetch("/", {
-                method: "POST",
+                method: "GET",
                 headers: {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
