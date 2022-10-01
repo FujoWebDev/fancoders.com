@@ -21,21 +21,21 @@ export default function HomepageJoin(): JSX.Element {
             onSubmit={(e) => {
               e.preventDefault();
               const formData = new FormData(e.currentTarget);
-              fetch("/", {
-                method: "GET",
-                // headers: {
-                //   "Content-Type": "application/x-www-form-urlencoded",
-                // },
-                // body: new URLSearchParams(
-                //   [...formData.entries()].reduce((current, [k, v]) => {
-                //     if (typeof v == "string") {
-                //       current[k] = v;
-                //     }
-                //     return current;
-                //   }, {} as Record<string, string>)
-                // ).toString(),
+              fetch("/form-submission.html", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams(
+                  [...formData.entries()].reduce((current, [k, v]) => {
+                    if (typeof v == "string") {
+                      current[k] = v;
+                    }
+                    return current;
+                  }, {} as Record<string, string>)
+                ).toString(),
               })
-                .then((e) => e.text().then((e) => console.log(e)))
+                .then(() => console.log("Form successfully submitted"))
                 .catch((error) => alert(error));
             }}
           >
