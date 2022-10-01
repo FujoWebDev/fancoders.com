@@ -19,7 +19,9 @@ export default function HomepageJoin(): JSX.Element {
             <label>
               Your Email: <input type="email" name="email" />
             </label>
-            <button type="submit">Send</button>
+            <button name="submit" type="submit">
+              Send
+            </button>
           </form>
         </p>
         <p>
