@@ -10,28 +10,50 @@ export default function HomepageJoin(): JSX.Element {
         <h2>How to Join Us</h2>
         <p>
           Fandom Coders currently exists as a Discord server, with plans to
-          expand to other socials, and eventually hold public online events. All
-          current members have the ability to invite new ones.
+          expand to other socials, and eventually hold public online events.
         </p>
         <p>
-          If you're interested in joining us, you can sign up through this form:
+          If you're interested in joining us, you can apply through this form:
           <form
             name="fandom-coders-signup"
             method="POST"
             data-netlify="true"
             action="/docs/intro"
           >
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-            <button type="submit">Send</button>
+            <p>
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label htmlFor="about">A bit about you</label>
+              <div>
+                How long have you been in fandom? Why are you interested in
+                joining us?
+              </div>
+              <textarea name="about" id="about" required />
+            </p>
+            <fieldset>
+              <legend>Signup for</legend>
+              <label>
+                <input type="checkbox" value="Discord" /> Discord server
+              </label>
+              <label>
+                <input type="checkbox" value="BobaBoard" /> BobaBoard realm
+                (waitlist){" "}
+              </label>
+              <details>
+                <summary>What's a BobaBoard realm?</summary>
+                <p>A realm is...</p>
+              </details>
+            </fieldset>
+            <button type="submit">Apply</button>
           </form>
         </p>
         <p>
           Alternatively, reach out to Ms Boba on{" "}
           <a href="https://essential-randomness.tumblr.com">tumblr</a> or{" "}
-          <a href="https://twitter.com/EssentialRandom">twitter</a> for a
-          Discord invite.
+          <a href="https://twitter.com/EssentialRandom">twitter</a>. All current
+          members also have the ability to invite new ones.
         </p>
       </div>
     </section>

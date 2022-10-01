@@ -3,3 +3,39 @@
   align-items: center;
   width: 100%;
 }
+
+.join form {
+  max-width: 600px;
+  border-left: 3px solid var(--ifm-blockquote-color);
+  padding: 0 15px;
+}
+
+.join form > * {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.join form div {
+  font-size: small;
+}
+
+.join label {
+  display: block;
+}
+
+.join :not(fieldset) > label,
+fieldset legend {
+  font-size: large;
+  color: var(--ifm-color-primary);
+}
+
+.join input:not([type="checkbox"]),
+.join textarea {
+  width: 100%;
+}
+
+.join details summary {
+  margin-top: 5px;
+  color: var(--ifm-blockquote-color);
+  font-size: small;
+}
