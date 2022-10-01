@@ -21,11 +21,15 @@ export default function HomepageJoin(): JSX.Element {
             action="/docs/intro"
           >
             <p>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email" className="required">
+                Email
+              </label>
               <input type="email" name="email" id="email" required />
             </p>
             <p>
-              <label htmlFor="about">A bit about you</label>
+              <label htmlFor="about" className="required">
+                A bit about you
+              </label>
               <div>
                 How long have you been in fandom? Why are you interested in
                 joining us?
@@ -46,6 +50,12 @@ export default function HomepageJoin(): JSX.Element {
                 <p>A realm is...</p>
               </details>
             </fieldset>
+            <p>
+              <label htmlFor="how-did-you-hear">
+                How did you hear about us?
+              </label>
+              <input name="how-did-you-hear" id="how-did-you-hear" required />
+            </p>
             <button type="submit">Apply</button>
           </form>
         </p>

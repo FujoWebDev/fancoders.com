@@ -29,6 +29,10 @@ fieldset legend {
   color: var(--ifm-color-primary);
 }
 
+.join label:global(.required):after {
+  content: "*";
+}
+
 .join input:not([type="checkbox"]),
 .join textarea {
   width: 100%;
