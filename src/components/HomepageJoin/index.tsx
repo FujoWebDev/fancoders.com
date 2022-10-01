@@ -18,7 +18,26 @@ export default function HomepageJoin(): JSX.Element {
             name="fandom-coders-signup"
             method="POST"
             data-netlify="true"
-            action="/docs/intro"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              fetch("/", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams(
+                  [...formData.entries()].reduce((current, [k, v]) => {
+                    if (typeof v == "string") {
+                      current[k] = v;
+                    }
+                    return current;
+                  }, {} as Record<string, string>)
+                ).toString(),
+              })
+                .then(() => console.log("Form successfully submitted"))
+                .catch((error) => alert(error));
+            }}
           >
             <p>
               <label htmlFor="email" className="required">
