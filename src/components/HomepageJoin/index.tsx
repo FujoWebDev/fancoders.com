@@ -22,7 +22,7 @@ export default function HomepageJoin(): JSX.Element {
               e.preventDefault();
               const formData = new FormData(e.currentTarget);
               fetch("/", {
-                method: "GET",
+                method: "POST",
                 headers: {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
@@ -73,7 +73,7 @@ export default function HomepageJoin(): JSX.Element {
               <label htmlFor="how-did-you-hear">
                 How did you hear about us?
               </label>
-              <input name="how-did-you-hear" id="how-did-you-hear" required />
+              <input name="how-did-you-hear" id="how-did-you-hear" />
             </p>
             <button type="submit">Apply</button>
           </form>
