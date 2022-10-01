@@ -22,20 +22,20 @@ export default function HomepageJoin(): JSX.Element {
               e.preventDefault();
               const formData = new FormData(e.currentTarget);
               fetch("/", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/x-www-form-urlencoded",
-                },
-                body: new URLSearchParams(
-                  [...formData.entries()].reduce((current, [k, v]) => {
-                    if (typeof v == "string") {
-                      current[k] = v;
-                    }
-                    return current;
-                  }, {} as Record<string, string>)
-                ).toString(),
+                method: "GET",
+                // headers: {
+                //   "Content-Type": "application/x-www-form-urlencoded",
+                // },
+                // body: new URLSearchParams(
+                //   [...formData.entries()].reduce((current, [k, v]) => {
+                //     if (typeof v == "string") {
+                //       current[k] = v;
+                //     }
+                //     return current;
+                //   }, {} as Record<string, string>)
+                // ).toString(),
               })
-                .then(() => console.log("Form successfully submitted"))
+                .then((e) => e.text().then((e) => console.log(e)))
                 .catch((error) => alert(error));
             }}
           >
