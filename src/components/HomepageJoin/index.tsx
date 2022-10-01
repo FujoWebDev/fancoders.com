@@ -19,9 +19,7 @@ export default function HomepageJoin(): JSX.Element {
             name="fandom-coders-signup"
             method="POST"
             data-netlify="true"
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
+            action="/docs/intro"
           >
             <label>
               Your Email: <input type="email" name="email" />
