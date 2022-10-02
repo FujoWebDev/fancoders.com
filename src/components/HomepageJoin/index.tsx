@@ -10,6 +10,7 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
     onSubmit={(e) => {
       e.preventDefault();
       const formData = new FormData(e.currentTarget);
+      console.log(...formData.entries());
       fetch("/", {
         method: "POST",
         headers: {
@@ -17,6 +18,7 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
         },
         body: new URLSearchParams(
           [...formData.entries()].reduce((current, [k, v]) => {
+            debugger;
             if (typeof v == "string") {
               current[k] = v;
             }
@@ -39,18 +41,18 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
       <label htmlFor="about" className="required">
         A bit about you
       </label>
-      <div>
+      <span>
         How long have you been in fandom? Why are you interested in joining us?
-      </div>
+      </span>
       <textarea name="about" id="about" required />
     </p>
     <fieldset>
       <legend>Signup for</legend>
       <label>
-        <input type="checkbox" value="Discord" /> Discord server
+        <input type="checkbox" name="discord" /> Discord server
       </label>
       <label>
-        <input type="checkbox" value="BobaBoard" /> BobaBoard realm (waitlist){" "}
+        <input type="checkbox" name="bobaboard" /> BobaBoard realm (waitlist){" "}
       </label>
       <details>
         <summary>What's a BobaBoard realm?</summary>
