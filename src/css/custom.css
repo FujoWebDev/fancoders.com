@@ -4,21 +4,25 @@
  * work well for content-centric websites.
  */
 
- /* Self-hosted Fonts */
- @font-face {
-  font-family: 'Victor Mono';
-  src: url('/fonts/VictorMono/VictorMono-Regular.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/VictorMono/VictorMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/VictorMono/VictorMono-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/VictorMono/VictorMono-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/fonts/VictorMono/VictorMono-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+/* Self-hosted Fonts */
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/fonts/VictorMono/VictorMono-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/VictorMono/VictorMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/VictorMono/VictorMono-Regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/VictorMono/VictorMono-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("/fonts/VictorMono/VictorMono-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
 
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 /* Removes Docusaurus external link icon */
-[class*=iconExternalLink] {
+[class*="iconExternalLink"] {
   display: none;
 }
 
@@ -31,16 +35,16 @@
   --ifm-color-primary-light: #0b7ca3;
   --ifm-color-primary-lighter: #0b82aa;
   --ifm-color-primary-lightest: #0d93c0;
-  --ifm-color-secondary: #AD39AB;
-  --ifm-background-color: #FAFAFA;
-  --ifm-dropdown-background-color: #FAFAFA;
+  --ifm-color-secondary: #ad39ab;
+  --ifm-background-color: #fafafa;
+  --ifm-dropdown-background-color: #fafafa;
   --ifm-font-color-base: #000000;
-  --ifm-blockquote-color: #8E8E8E;
-  --ifm-link-color: #477CF2;
-  --ifm-link-hover-color: #69AE69;
+  --ifm-blockquote-color: #8e8e8e;
+  --ifm-link-color: #477cf2;
+  --ifm-link-hover-color: #69ae69;
   --ifm-link-hover-decoration: none;
-  --docusaurus-highlighted-code-line-bg: #F0F0F0;
-  --ifm-menu-color-background-active: #F0F0F0;
+  --docusaurus-highlighted-code-line-bg: #f0f0f0;
+  --ifm-menu-color-background-active: #f0f0f0;
   --ifm-color-success: rgba(0, 164, 0, 0.6);
   --ifm-color-info: rgba(84, 199, 236, 0.6);
   --ifm-color-warning: rgba(255, 186, 0, 0.6);
@@ -55,15 +59,15 @@
   --ifm-color-info-contrast-background: rgb(206, 217, 221);
   --ifm-color-warning-contrast-background: rgb(226, 219, 202);
   --ifm-color-danger-contrast-background: rgb(226, 207, 208);
-  --ifm-font-family-base: 'Comfortaa', sans-serif;
-  --ifm-font-family-monospace: 'Victor Mono', 'Courier New', monospace;
+  --ifm-font-family-base: "Comfortaa", sans-serif;
+  --ifm-font-family-monospace: "Victor Mono", "Courier New", monospace;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-footer-color: #000000;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --ifm-color-primary: #ff79c6;
   --ifm-color-primary-dark: #ff53b6;
   --ifm-color-primary-darker: #ff41ae;
@@ -104,29 +108,28 @@ html[data-theme='dark'] {
   background-color: transparent;
 }
 
-html[data-theme='dark'] .footer,
-html[data-theme='dark'] .navbar,
-html[data-theme='dark'] .navbar-sidebar {
+html[data-theme="dark"] .footer,
+html[data-theme="dark"] .navbar,
+html[data-theme="dark"] .navbar-sidebar {
   --ifm-footer-title-color: #bd93f9 !important;
   --ifm-footer-link-color: #f8f8f2;
 }
 
-html[data-theme='light'] .footer,
-html[data-theme='light'] .navbar,
-html[data-theme='light'] .navbar-sidebar {
-  --ifm-footer-title-color: #AD39AB !important;
+html[data-theme="light"] .footer,
+html[data-theme="light"] .navbar,
+html[data-theme="light"] .navbar-sidebar {
+  --ifm-footer-title-color: #ad39ab !important;
   --ifm-footer-link-color: #000000 !important;
 }
 
 /* Sets hero background color. */
-html[data-theme='light'] .hero--dark {
+html[data-theme="light"] .hero--dark {
   background-color: #dadada;
 }
 
-html[data-theme='dark'] .hero--dark {
-  background-color: #383A59;
+html[data-theme="dark"] .hero--dark {
+  background-color: #383a59;
 }
-
 
 /* Customizes link buttons */
 .button.button--secondary.button--outline:not(.button--active):not(:hover) {
@@ -137,28 +140,32 @@ html[data-theme='dark'] .hero--dark {
   color: var(--ifm-font-color-base-inverse);
 }
 
-html[data-theme='light'] .button.button--custom.button--outline:not(.button--active):not(:hover) {
-  color: #477CF2;
-  border: var(--ifm-button-border-width) solid  #477CF2;
+html[data-theme="light"]
+  .button.button--custom.button--outline:not(.button--active):not(:hover) {
+  color: #477cf2;
+  border: var(--ifm-button-border-width) solid #477cf2;
 }
 
-html[data-theme='light'] .button.button--custom.button--outline:not(.button--active):hover {
-  background-color: #477CF2;
-  border: var(--ifm-button-border-width) solid  #477CF2;
+html[data-theme="light"]
+  .button.button--custom.button--outline:not(.button--active):hover {
+  background-color: #477cf2;
+  border: var(--ifm-button-border-width) solid #477cf2;
 }
 
-html[data-theme='dark'] .button.button--custom.button--outline:not(.button--active):not(:hover) {
+html[data-theme="dark"]
+  .button.button--custom.button--outline:not(.button--active):not(:hover) {
   color: #8be9fd;
-  border: var(--ifm-button-border-width) solid  #8be9fd;
+  border: var(--ifm-button-border-width) solid #8be9fd;
 }
 
-html[data-theme='dark'] .button.button--custom.button--outline:not(.button--active):hover {
+html[data-theme="dark"]
+  .button.button--custom.button--outline:not(.button--active):hover {
   background-color: #8be9fd;
-  border: var(--ifm-button-border-width) solid  #8be9fd;
+  border: var(--ifm-button-border-width) solid #8be9fd;
 }
 
 /* Header sizes for mobile */
-@media screen and (max-width:996px) {
+@media screen and (max-width: 996px) {
   h1 {
     font-size: 1.902em;
   }
@@ -174,4 +181,9 @@ html[data-theme='dark'] .button.button--custom.button--outline:not(.button--acti
   h4 {
     font-size: 1.125em;
   }
+}
+
+main {
+  max-width: 40em;
+  margin: 0 auto;
 }
