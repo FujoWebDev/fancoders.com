@@ -8,6 +8,7 @@
   max-width: 600px;
   border-left: 3px solid var(--ifm-blockquote-color);
   padding: 0 15px;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
 }
 
 .join form > * {
@@ -42,4 +43,17 @@ fieldset legend {
   margin-top: 5px;
   color: var(--ifm-blockquote-color);
   font-size: small;
+}
+
+.join :global(.congratulations) {
+  background-color: #383a59;
+  max-width: 600px;
+  border-left: 3px solid var(--ifm-blockquote-color);
+  padding: 15px;
+  border-radius: 0 15px 15px 0;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+
+.join :global(.congratulations) h3 {
+  color: var(--ifm-color-primary);
 }
