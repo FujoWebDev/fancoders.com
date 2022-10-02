@@ -10,7 +10,6 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
     onSubmit={(e) => {
       e.preventDefault();
       const formData = new FormData(e.currentTarget);
-      console.log(...formData.entries());
       fetch("/", {
         method: "POST",
         headers: {
@@ -18,7 +17,6 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
         },
         body: new URLSearchParams(
           [...formData.entries()].reduce((current, [k, v]) => {
-            debugger;
             if (typeof v == "string") {
               current[k] = v;
             }
@@ -56,7 +54,11 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
       </label>
       <details>
         <summary>What's a BobaBoard realm?</summary>
-        <p>A realm is...</p>
+        <p>
+          Imagine a forum. Try to modernize it. Make it (mostly) anonymous.
+          Something like that. For more information,{" "}
+          <a href="https://www.bobaboard.com">www.bobaboard.com</a>.
+        </p>
       </details>
     </fieldset>
     <p>
