@@ -21,7 +21,7 @@ export default function HomepageJoin(): JSX.Element {
             onSubmit={(e) => {
               e.preventDefault();
               const formData = new FormData(e.currentTarget);
-              fetch("/form-submission.html", {
+              fetch("/", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/x-www-form-urlencoded",
@@ -39,6 +39,12 @@ export default function HomepageJoin(): JSX.Element {
                 .catch((error) => alert(error));
             }}
           >
+            {" "}
+            <input
+              type="hidden"
+              name="form-name"
+              value="fandom-coders-signup"
+            />
             <p>
               <label htmlFor="email" className="required">
                 Email
