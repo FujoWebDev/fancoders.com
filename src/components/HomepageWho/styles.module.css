@@ -6,5 +6,5 @@
 }
 
 .who em {
-  color: #8be9fd;
+  color: var(--ifm-color-primary-dark);
 }
