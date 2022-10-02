@@ -39,10 +39,12 @@ fieldset legend {
   width: 100%;
 }
 
+.join details {
+  font-size: small;
+}
 .join details summary {
   margin-top: 5px;
   color: var(--ifm-blockquote-color);
-  font-size: small;
 }
 
 .join :global(.congratulations) {
