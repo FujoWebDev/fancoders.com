@@ -187,3 +187,7 @@ main {
   max-width: 40em;
   margin: 0 auto;
 }
+
+em {
+  color: var(--ifm-color-primary-dark);
+}
