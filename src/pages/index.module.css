@@ -1,35 +1,15 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+/*
+ * NOTE: The "wrapperClassName" in MDX pages needs to be used like a global css class.
+ *
+ * Make sure to prepend it in front of each selector here, or these rules might end up
+ * polluting other pages after the page they're imported from is loaded.
  */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+:global(.index-page) main {
+  /* Don't tell me how to live my life, docusaurus */
+  margin-top: 0 !important;
+  max-width: 40em;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.heroContents {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.heroLogo {
-  padding: 0 50px;
+:global(.index-page) h2 {
+  margin-top: 2.5rem;
 }
