@@ -1,22 +1,16 @@
-.join {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.join form {
+form.join {
   max-width: 600px;
   border-left: 3px solid var(--ifm-blockquote-color);
   padding: 0 15px;
   margin-bottom: var(--ifm-paragraph-margin-bottom);
 }
 
-.join form > * {
+form.join > * {
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.join form span {
+form.join span {
   font-size: small;
 }
 
@@ -47,7 +41,7 @@ fieldset legend {
   color: var(--ifm-blockquote-color);
 }
 
-.join :global(.congratulations) {
+.congratulations {
   background-color: #383a59;
   max-width: 600px;
   border-left: 3px solid var(--ifm-blockquote-color);
@@ -56,6 +50,6 @@ fieldset legend {
   margin-bottom: var(--ifm-paragraph-margin-bottom);
 }
 
-.join :global(.congratulations) h3 {
+.congratulations h3 {
   color: var(--ifm-color-primary);
 }

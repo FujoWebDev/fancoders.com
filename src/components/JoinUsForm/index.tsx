@@ -1,9 +1,9 @@
 import React from "react";
-import clsx from "clsx";
 import styles from "./styles.module.css";
 
-const Form = ({ onSuccess }: { onSuccess: () => void }) => (
+const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
   <form
+    className={styles.join}
     name="fandom-coders-signup"
     method="POST"
     data-netlify="true"
@@ -69,37 +69,22 @@ const Form = ({ onSuccess }: { onSuccess: () => void }) => (
   </form>
 );
 
-export default function HomepageJoin(): JSX.Element {
-  const [submitted, setSubmitted] = React.useState(false);
-
+const Congratulations = () => {
   return (
-    <section className={styles.join}>
-      <a id="join"></a>
-      <div className="container">
-        <h2>How to Join Us</h2>
-        <p>
-          Fandom Coders currently exists as a Discord server, with plans to
-          expand to other socials, and eventually hold public online events.
-        </p>
-        <p>
-          If you're interested in joining us, you can apply through this form:
-        </p>
-        {submitted ? (
-          <div className="congratulations">
-            <h3>Thank you!</h3>
-            Your application has been sent for review. To submit another
-            application, refresh the page.
-          </div>
-        ) : (
-          <Form onSuccess={() => setSubmitted(true)} />
-        )}
-        <p>
-          Alternatively, reach out to Ms Boba on{" "}
-          <a href="https://essential-randomness.tumblr.com">tumblr</a> or{" "}
-          <a href="https://twitter.com/EssentialRandom">twitter</a>. All current
-          members also have the ability to invite new ones.
-        </p>
-      </div>
-    </section>
+    <div className={styles.congratulations}>
+      <h3>Thank you!</h3>
+      Your application has been sent for review. To submit another application,
+      refresh the page.
+    </div>
   );
-}
+};
+
+const Form = () => {
+  const [submitted, setSubmitted] = React.useState(false);
+  if (submitted) {
+    return <Congratulations />;
+  }
+  return <SignUp onSuccess={() => setSubmitted(true)} />;
+};
+
+export default Form;

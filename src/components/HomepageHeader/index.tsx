@@ -1,11 +1,7 @@
-import HomepageGoals from "@site/src/components/HomepageGoal";
-import HomepageJoin from "@site/src/components/HomepageJoin";
-import HomepageWho from "@site/src/components/HomepageWho";
-import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import React from "react";
 import clsx from "clsx";
-import styles from "./index.module.css";
+import styles from "./styles.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function HomepageHeader() {
@@ -18,17 +14,20 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--outline button--primary margin-right--sm"
-              to="#who"
+              to="#who-are-we"
             >
               Who are we?
             </Link>
             <Link
               className="button button--outline button--secondary margin-right--sm"
-              to="#goals"
+              to="#our-goals"
             >
               Our Goals
             </Link>
-            <Link className="button button--outline button--custom" to="#join">
+            <Link
+              className="button button--outline button--custom"
+              to="#how-to-join-us"
+            >
               How to Join Us
             </Link>
           </div>
@@ -39,16 +38,4 @@ function HomepageHeader() {
   );
 }
 
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <Layout description="Welcome to Fandom Coders, a group of coding hobbyists and professionals who enjoy coding projects to make fandom lives easier and more fun. The website serves as a member hub and a place to host our group wiki which focuses on providing a references, tutorials, and resources for coders of all levels.">
-      <HomepageHeader />
-      <main>
-        <HomepageWho />
-        <HomepageGoals />
-        <HomepageJoin />
-      </main>
-    </Layout>
-  );
-}
+export default HomepageHeader;
