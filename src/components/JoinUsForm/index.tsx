@@ -72,7 +72,7 @@ const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
       </summary>
       <p>
         Woops, sorry about that! We're currently manually sending invites around
-        once a week. If more time has passed, we're either running *very*
+        once a week. If more time has passed, we're either running <em>very</em>
         behind, or might have accidentally skipped your application.
       </p>
       <p>
