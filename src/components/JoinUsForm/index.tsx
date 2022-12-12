@@ -65,6 +65,22 @@ const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
       <label htmlFor="how-did-you-hear">How did you hear about us?</label>
       <input name="how-did-you-hear" id="how-did-you-hear" />
     </p>
+    <details>
+      <summary>
+        Help! I submitted this form some time ago but haven't received an invite
+        yet!
+      </summary>
+      <p>
+        Woops, sorry about that! We're currently manually sending invites around
+        once a week. If more time has passed, we're either running
+        <em>very</em> behind, or might have accidentally skipped your
+        application.
+      </p>
+      <p>
+        Feel free to resubmit this form with your email, and let us know you've
+        already submitted a full application before. We'll take it from there.
+      </p>
+    </details>
     <button type="submit">Apply</button>
   </form>
 );
