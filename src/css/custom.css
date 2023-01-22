@@ -64,6 +64,9 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-footer-color: #000000;
+
+  --discord-pwc-role-color: #1a8870;
+  --discord-wwwg-role-color: #559bff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -190,4 +193,21 @@ main {
 
 em {
   color: var(--ifm-color-primary-dark);
+}
+
+.menu__link {
+  text-transform: capitalize;
+}
+
+.discord-role {
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+  color: var(--role-color);
+  border-radius: var(--ifm-breadcrumb-border-radius);
+  background: var(--ifm-breadcrumb-item-background-active);
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+}
+.discord-role::before {
+  content: "Discord role: ";
+  color: var(--ifm-font-color-base);
 }
