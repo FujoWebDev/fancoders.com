@@ -22,16 +22,16 @@ This page is a summary of a thread from the Fandom Coders discord server in whic
 - *Commit* - every time you save the changes you've made with git/github to the branch or fork you are working on, you are making a commit. Usually several changes are committed at once; you "stage" changes to include them in a commit.
 - *Pull request* - a pull request is the request to merge a commit (or a package of edits/changes) with the original fork or original repository for the code. This is how changes to the code are finalized and incorporated.
 
-If you'd like a fairly simple explanation of git and how it works, <a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git">this</a> is a good place to start.
+If you'd like a fairly simple explanation of git and how it works, [this](https://learn.microsoft.com/en-us/devops/develop/git/what-is-git) is a good place to start.
 
 ### Some wiki vocabulary and info you will need to know:
 
-- *Docusaurus* - a static site generator. This is what is used to make the Fandom Coders website. You can learn more about it <a href="https://docusaurus.io/">here</a>.
+- *Docusaurus* - a static site generator. This is what is used to make the Fandom Coders website. You can learn more about it [here](https://docusaurus.io/).
 - *.MDX* - this is a file type used in the wiki. The page you're reading right now is an .MDX file! MDX stands for "MarkDown & JSX," which are the two types of code that can be used in an .MDX file. JSX is similar to HTML, so most simple HTML tags can be used in an .MDX file, such as hyperlink tags (as with the above links).
-- *Markdown* - a text markup language; you may be familiar with MarkDown, especially if you already know some HTML, but if you want more information about it, check out <a href="https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/">this</a> page or <a href="https://commonmark.org/help/">this</a> page for some common MarkDown syntax.
+- *Markdown* - a text markup language; you may be familiar with MarkDown, especially if you already know some HTML, but if you want more information about it, check out [this](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/) page or [this](https://commonmark.org/help/) page for some common MarkDown syntax.
 - *.MD* - a MarkDown file. You'll find some of these in the wiki.
-- *.JS* - a JavaScript file. You'll find these in the Fandom Coders site as well, but we won't cover how to edit them in this tutorial. To learn more about JS, you can check out <a href="https://www.w3schools.com/js/default.asp">this</a> page.
-- *.JSON* - a JavaScript Object Notation file. As above, these are used in this website, but we won't cover editing them here. For more info on JSON, see <a href="https://www.w3schools.com/whatis/whatis_json.asp">this</a> page.
+- *.JS* - a JavaScript file. You'll find these in the Fandom Coders site as well, but we won't cover how to edit them in this tutorial. To learn more about JS, you can check out [this](https://www.w3schools.com/js/default.asp) page.
+- *.JSON* - a JavaScript Object Notation file. As above, these are used in this website, but we won't cover editing them here. For more info on JSON, see [this](https://www.w3schools.com/whatis/whatis_json.asp) page.
 
 If you have any questions about other file types or languages used in the website and/or wiki, try googling them! This is only a few!
 
@@ -39,9 +39,9 @@ If you have any questions about other file types or languages used in the websit
 
 ### Getting started with Github
 
-To get started with editing the Fancoders Wiki, you'll need to be able to use GitHub. So first things first, <a href="https://github.com/signup">make yourself an account on GitHub</a> if you don't have one yet.
+To get started with editing the Fancoders Wiki, you'll need to be able to use GitHub. So first things first, [make yourself an account on GitHub](https://github.com/signup) if you don't have one yet.
 
-Once you have an account on Github, you can head on over to the repository for the Fancoders site, <a href="https://github.com/Fandom-Coders/fancoders.com">here</a>. From here, you'll be able to see the files that make up the site, but you won't be able to make edits here unless you are added by the Fancoders admins as a collaborator.
+Once you have an account on Github, you can head on over to the repository for the Fancoders site, [here](https://github.com/Fandom-Coders/fancoders.com). From here, you'll be able to see the files that make up the site, but you won't be able to make edits here unless you are added by the Fancoders admins as a collaborator.
 
 If you don't want to wait to be added, what you can do is create a *fork* of the repository, which will belong to your GitHub account and is, for all intents and purposes, separate from the original repository. You will then be able to create your own *branches* within your fork and make edits there. Later, you'll be able to make a *pull request* back to the main repository to merge your edits into the site, if you so choose.
 
@@ -55,9 +55,9 @@ Name your new branch whatever you want; as long as the name is descriptive enoug
 
 ### Setting up the VSCode workspace on GitPod
 
-Now, if you don't want to commit to downloading coding software just yet, the easiest way to edit the Fancoders site will be using a digital workspace. For the purposes of this tutorial, we use <a href="https://www.gitpod.io/">GitPod</a>, which allows you to sign in via GitHub and edit using the VSCode software interface (but without having to download VSCode).
+Now, if you don't want to commit to downloading coding software just yet, the easiest way to edit the Fancoders site will be using a digital workspace. For the purposes of this tutorial, we use [GitPod](https://www.gitpod.io/), which allows you to sign in via GitHub and edit using the VSCode software interface (but without having to download VSCode).
 
-Once you have signed in to GitPod with your GitHub account, you'll be able to choose what type of workspace you want to use in GitPod. We used <a href="https://code.visualstudio.com/">VSCode</a> for this tutorial, so unless you are already familiar with one of the other workspaces, we recommend you also use VSCode.
+Once you have signed in to GitPod with your GitHub account, you'll be able to choose what type of workspace you want to use in GitPod. We used [VSCode](https://code.visualstudio.com/) for this tutorial, so unless you are already familiar with one of the other workspaces, we recommend you also use VSCode.
 
 GitPod will also ask you what repository and branch you want to open from your GitHub account. Choose the forked repository you just made, and the branch within it that you created for this tutorial.
 
@@ -75,9 +75,9 @@ Try clicking on the *docs* folder (folders are shown with arrows in the file exp
 
 The third icon in the left-hand sidebar is the search. You can use this to find things in your site, or in the specific page you have open. You can also use it to find and replace.
 
-If you are having trouble editing a page because your window is too small and you have to scroll for ages to see a full line of code, you can toggle wrapping on and off using the *command palette* in the VSCode workspace by typing "> wrap" and clicking the option that comes up for it. The shortcut to open the command palette is usually either CTRL+P or CMD+P, depending on whether you use Windows or Mac, but if neither of those work, you may need to check out the <a href="https://code.visualstudio.com/docs/getstarted/keybindings">VSCode site</a> to look up what shortcut to use on your machine.
+If you are having trouble editing a page because your window is too small and you have to scroll for ages to see a full line of code, you can toggle wrapping on and off using the *command palette* in the VSCode workspace by typing "> wrap" and clicking the option that comes up for it. The shortcut to open the command palette is usually either CTRL+P or CMD+P, depending on whether you use Windows or Mac, but if neither of those work, you may need to check out the [VSCode site](https://code.visualstudio.com/docs/getstarted/keybindings) to look up what shortcut to use on your machine.
 
-If you want to make a *new page* for the wiki, you can right-click on the folder you want to put the page in, choose "new file," and create a new page. You'll want to title it something like "page-topic.mdx" so that it can use the same MDX formatting as the other wiki pages. On your new page, you can write about whatever topic or tutorial you want to include in the Fancoders Wiki. If you need some help figuring out the setup or formatting, Docusaurus has a <a href="https://docusaurus.io/docs/create-doc">guide</a> for making new docs pages.
+If you want to make a *new page* for the wiki, you can right-click on the folder you want to put the page in, choose "new file," and create a new page. You'll want to title it something like "page-topic.mdx" so that it can use the same MDX formatting as the other wiki pages. On your new page, you can write about whatever topic or tutorial you want to include in the Fancoders Wiki. If you need some help figuring out the setup or formatting, Docusaurus has a [guide](https://docusaurus.io/docs/create-doc) for making new docs pages.
 
 *(If you don't have a topic or tutorial you want to make, and you're just using this tutorial to get used to the editing process, try going through this page and correcting my grammar! I'm sure you'll be able to find something to fix ;3c)*
 
@@ -135,4 +135,4 @@ To finish up, we'll go over the steps we covered here.
 - Create a *commit* using your staged changes
 - Create a *pull request* to merge your finished changes into either your main branch or the site source.
 
-That's everything! If you have any questions, you can ask them in our Discord server, or <a href="https://www.fancoders.com/#how-to-join-us">join it</a> if you haven't yet!
+That's everything! If you have any questions, you can ask them in our Discord server, or [request to join it](https://www.fancoders.com/#how-to-join-us) if you haven't yet!
