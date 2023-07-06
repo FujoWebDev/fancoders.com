@@ -1,0 +1,138 @@
+# Learn to edit the wiki
+
+## Overview 
+
+This page is a summary of a thread from the Fandom Coders discord server in which a few members went over how to make edits to this wiki.
+
+### What this page will teach you:
+
+- How to make a fork of a github repository (if you haven't been added as a collaborator to that repository)
+- How to branch a repository in github
+- How to make edits to a branch using an online workspace such as gitpod.io 
+- Recommendations on offline editing software (as an alternative to an online/remote editing environment like gitpod)
+- Types of files used in this wiki
+- Syntax for the file types used in this wiki
+
+### Some git vocabulary you will need to know:
+
+- *Git* - git is a version control system for making edits to code. Github is the most well-known website for storing projects that are edited/versioned using git.
+- *Repository* - a name for the code base you are editing, forking, or branching from to make edits.
+- *Fork* - a fork is a copy of a repository, like a snapshot, taken at a certain time, which can then be edited separately from the main/original repository.
+- *Branch* - branches can be made within forks; branches are where edits are made without changing the original code base, and can be "merged" back into the original code base using a commit & pull request.
+- *Commit* - every time you save the changes you've made with git/github to the branch or fork you are working on, you are making a commit. Usually several changes are committed at once; you "stage" changes to include them in a commit.
+- *Pull request* - a pull request is the request to merge a commit (or a package of edits/changes) with the original fork or original repository for the code. This is how changes to the code are finalized and incorporated.
+
+If you'd like a fairly simple explanation of git and how it works, [this](https://learn.microsoft.com/en-us/devops/develop/git/what-is-git) is a good place to start.
+
+### Some wiki vocabulary and info you will need to know:
+
+- *Docusaurus* - a static site generator. This is what is used to make the Fandom Coders website. You can learn more about it [here](https://docusaurus.io/).
+- *.MDX* - this is a file type used in the wiki. The page you're reading right now is an .MDX file! MDX stands for "MarkDown & JSX," which are the two types of code that can be used in an .MDX file. JSX is similar to HTML, so most simple HTML tags can be used in an .MDX file, such as hyperlink tags (as with the above links).
+- *Markdown* - a text markup language; you may be familiar with MarkDown, especially if you already know some HTML, but if you want more information about it, check out [this](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/) page or [this](https://commonmark.org/help/) page for some common MarkDown syntax.
+- *.MD* - a MarkDown file. You'll find some of these in the wiki.
+- *.JS* - a JavaScript file. You'll find these in the Fandom Coders site as well, but we won't cover how to edit them in this tutorial. To learn more about JS, you can check out [this](https://www.w3schools.com/js/default.asp) page.
+- *.JSON* - a JavaScript Object Notation file. As above, these are used in this website, but we won't cover editing them here. For more info on JSON, see [this](https://www.w3schools.com/whatis/whatis_json.asp) page.
+
+If you have any questions about other file types or languages used in the website and/or wiki, try googling them! This is only a few!
+
+## The actual tutorial:
+
+### Getting started with Github
+
+To get started with editing the Fancoders Wiki, you'll need to be able to use GitHub. So first things first, [make yourself an account on GitHub](https://github.com/signup) if you don't have one yet.
+
+Once you have an account on Github, you can head on over to the repository for the Fancoders site, [here](https://github.com/Fandom-Coders/fancoders.com). From here, you'll be able to see the files that make up the site, but you won't be able to make edits here unless you are added by the Fancoders admins as a collaborator.
+
+If you don't want to wait to be added, what you can do is create a *fork* of the repository, which will belong to your GitHub account and is, for all intents and purposes, separate from the original repository. You will then be able to create your own *branches* within your fork and make edits there. Later, you'll be able to make a *pull request* back to the main repository to merge your edits into the site, if you so choose.
+
+For now, check out the bar along the top of the Fancoders repository on GitHub. You should see a button that says *"fork"* and has a dropdown arrow. Click the dropdown arrow and you'll see the option to create your own fork of the site's code! Do this, name it whatever you want, and then you'll be able to edit in that fork.
+
+One last thing you'll want to do in GitHub before we move into the editing workspace is create a *branch* within your new fork. To do this, go to the new forked repository you've just created. You should see a button with a dropdown option just above the file list that says "main," indicating you are currently on the *main branch*. Next to it, click the link that says "branches" to go to the page that shows all the branches of your repository. Click the green button on this page that says "new branch" to create a new branch.
+
+Name your new branch whatever you want; as long as the name is descriptive enough that you can find it later and remember what you are using it for, it's fine!
+
+*(Side note: I usually name brances based on what edits I am making in the branch. For example, the branch I am currently working in while editing this page is called "wiki-editing-guide".)*
+
+### Setting up the VSCode workspace on GitPod
+
+Now, if you don't want to commit to downloading coding software just yet, the easiest way to edit the Fancoders site will be using a digital workspace. For the purposes of this tutorial, we use [GitPod](https://www.gitpod.io/), which allows you to sign in via GitHub and edit using the VSCode software interface (but without having to download VSCode).
+
+Once you have signed in to GitPod with your GitHub account, you'll be able to choose what type of workspace you want to use in GitPod. We used [VSCode](https://code.visualstudio.com/) for this tutorial, so unless you are already familiar with one of the other workspaces, we recommend you also use VSCode.
+
+GitPod will also ask you what repository and branch you want to open from your GitHub account. Choose the forked repository you just made, and the branch within it that you created for this tutorial.
+
+When you first open up your branch in the workspace, you'll probably get a couple little alerts on the bottom right about options in the workspace. For the most part you can ignore these for now (or just close them), but a useful one to pay attention to is a *port* option. You may get an option that says "A service is available on port 3000" (or some other number) with the option to open the port.
+
+What this option does is open a second window in your workspace that shows you what your changes will look like once live on the site. This is pretty useful, so you can open it if you want. You'll need to navigate this window to whatever Wiki page you are editing so you can see your changes, and you'll also need to refresh it every so often using the circular arrow refresh button at the top of the port window in your workspace.
+
+### Editing in the VSCode workspace
+
+Now that you're set up in the VSCode workspace, you'll see a vertical list of *icons* along the left side. The first one (the three lines) is a menu, which we won't use much.
+
+The second, which looks like two pieces of paper, is your *file browser*. If you click on it, you'll see all the files that make up the site, shown as they are in your branch. This is how you'll do most of your editing.
+
+Try clicking on the *docs* folder (folders are shown with arrows in the file explorer) to open it. This is where the Wiki pages are stored as .MDX files. You can click on an existing Wiki page to see how it's set up. Try looking at the *intro.mdx* page, or you can open the *iniatives* folder and check out the *intro.mdx* page in there, or the *personal-website-club.mdx* page to see how different types of pages are written.
+
+The third icon in the left-hand sidebar is the search. You can use this to find things in your site, or in the specific page you have open. You can also use it to find and replace.
+
+If you are having trouble editing a page because your window is too small and you have to scroll for ages to see a full line of code, you can toggle wrapping on and off using the *command palette* in the VSCode workspace by typing "> wrap" and clicking the option that comes up for it. The shortcut to open the command palette is usually either CTRL+P or CMD+P, depending on whether you use Windows or Mac, but if neither of those work, you may need to check out the [VSCode site](https://code.visualstudio.com/docs/getstarted/keybindings) to look up what shortcut to use on your machine.
+
+If you want to make a *new page* for the wiki, you can right-click on the folder you want to put the page in, choose "new file," and create a new page. You'll want to title it something like "page-topic.mdx" so that it can use the same MDX formatting as the other wiki pages. On your new page, you can write about whatever topic or tutorial you want to include in the Fancoders Wiki. If you need some help figuring out the setup or formatting, Docusaurus has a [guide](https://docusaurus.io/docs/create-doc) for making new docs pages.
+
+*(If you don't have a topic or tutorial you want to make, and you're just using this tutorial to get used to the editing process, try going through this page and correcting my grammar! I'm sure you'll be able to find something to fix ;3c)*
+
+### Staging your changes
+
+Once you're done making your edits, check out the fourth icon in the sidebar on the far left.
+
+The fourth icon is *source control*, which is used with GitHub. This is where you'll be able to see what files you have changed in your branch while editing, what changes were made, and so on. You can also use this area to *stage* your changes.
+
+*Staging* a change means you are saving that change and incorporating it into your next *commit*. As mentioned above, a commit is basically applying a package of changes all at once, so if you have a lot of changes, you can choose which ones to stage (incoporate into the commit) in the source control panel.
+
+To *stage* a change, click the "+" icon next to the name of the changed file.
+
+If you decide you don't want to inlclude that change in the commit, you can find it again under the list of staged changes and click the "-" icon to *unstage* it.
+
+If you decide to get rid of a change entirely, there is a curved arrow icon to *discard* the change. Only use this if you want to delete the change permanently; if you might want to include the change in a later commit (just not this one!) you can leave it unstaged and commit it later instead.
+
+Once you have decided which changes to stage (and staged them all!), you can make your *commit*. There should be an orange button with a dropdown arrow that says "commit" in your source control panel (but it may be a different color if you are using dark mode or a different color theme). You can click the button to make your commit, or you can use the dropdown to make a commit and a pull request at the same time.
+
+### Making a commit
+
+Finally! You're done making your changes, you've staged all the changes you want to commit, and you're ready. Let's make a *commit*! Click the *commit* button.
+
+When making the commit, you will need to enter a *commit message*. Your workspace will open a window with the default commit message showing a list of the changes made, and you'll just need to enter a short description into the first line of the commit message to finish it. Then hit the check mark icon to finish.
+
+You can also enter your *commit message* directly into the message bar above the commit button before you hit the button to commit, if you prefer.
+
+If your branch has not yet been published to GitHub, you'll get an option here to publish it. This will happen if you make a new branch while in the editing workspace (done by clicking on the branch name in the bottom left, then using the command palette popup to create a new branch).
+
+If you made the branch in GitHub first, before entering the editing workspace, your branch has already been published to GitHub, and this is where the changes will be committed to.
+
+If you do need to publish the branch first, you'll get a pop-up in the bottom right of GitPod asking for permission to publish to GitHub. Some browsers with adblockers or pop-up blockers will prevent this, so you may need to go into your browser settings to whitelist GitPod.
+
+### Making a pull request
+
+Now that you've committed your changes (and published your branch, if necessary), you can head back over to your GitHub page for your fork of the Fancoders site repository. Here is where you can make your *pull request*, if you're done with whatever edits you were making and want them published to the site.
+
+First, you'll want to navigate to the branch you made your edits on. Once on this page, you'll see an option along the top labeled *pull requests*. Click on this, then on the green button to create a *new pull request*.
+
+Now decide where you want to send the pull request. If you are just making edits for yourself, or are not finished with them yet, you may want to send your pull request to your own repository's *main* branch. This just incorporates your changes from your edited branch into the main one. You'll be able to complete, merge, and close this pull request yourself.
+
+If you want to send your edits to the Fancoders site, you'll need to specify the original Fancoders repository as the destination. Once this pull request is made, you'll have to wait for the Fancoders admins to approve it and merge it into the site.
+
+In either case, a pull request should have a *comment* with a brief description of what you changed and why you are making the pull request. Once you've done this, you can finish your pull request!
+
+## Summary
+
+To finish up, we'll go over the steps we covered here.
+- Sign up for or log in to *GitHub*
+- Create your own *fork* of the Fancoders site repository
+- *Branch* your fork so that you can edit a branch without editing your *main* fork
+- Log in to *GitPod* using GitHub and set up the VSCode workspace
+- Make your *edits* in the workspace
+- Choose which of your changes to *stage*
+- Create a *commit* using your staged changes
+- Create a *pull request* to merge your finished changes into either your main branch or the site source.
+
+That's everything! If you have any questions, you can ask them in our Discord server, or [request to join it](https://www.fancoders.com/#how-to-join-us) if you haven't yet!
