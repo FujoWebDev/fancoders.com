@@ -6,7 +6,7 @@ type PersonalSiteCardProps = {
   name: string;
   url: string;
   creator: string;
-  description: string;
+  description: React.ReactNode;
   tools: string;
   host: string;
   registrar: string;
@@ -17,6 +17,7 @@ function PersonalSiteCard(props: PersonalSiteCardProps) {
   return (
     <div className={styles.siteCard}>
       <a href={url}>{name}</a> by {creator}
+      {description}
     </div>
   );
 }
