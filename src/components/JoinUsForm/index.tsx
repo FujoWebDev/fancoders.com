@@ -80,7 +80,7 @@ const SignUp = ({ onSuccess }: { onSuccess: () => void }) => (
         already submitted a full application before. We'll take it from there.
       </p>
     </details>
-    <button type="submit">Apply</button>
+    <button type="submit" className="button button--primary">Apply</button>
   </form>
 );
 
