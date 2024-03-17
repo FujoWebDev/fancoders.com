@@ -14,21 +14,21 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--outline button--primary margin-right--sm"
-              to="#who-are-we"
+              to="#who"
             >
               Who are we?
             </Link>
             <Link
               className="button button--outline button--secondary margin-right--sm"
-              to="#our-goals"
+              to="#goals"
             >
               Our Goals
             </Link>
             <Link
               className="button button--outline button--custom"
-              to="#how-to-join-us"
+              to="#origins"
             >
-              How to Join Us
+              Our Origins
             </Link>
           </div>
         </div>

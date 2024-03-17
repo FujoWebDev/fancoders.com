@@ -81,18 +81,12 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
+						href: "#join",
             position: "left",
-            label: "Wiki",
+            label: "Join Us",
           },
           {
-            to: "blog",
-            label: "Blog",
-            position: "left",
-          },
-          {
-            href: "https://github.com/Fandom-Coders",
+            href: "https://github.com/FujoWebDev/fancoders.com",
             label: "GitHub",
             position: "right",
           },
@@ -100,7 +94,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Fandom Coders. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fandom Coders. A Fujoverse Project.`,
       },
       colorMode: {
         defaultMode: "dark",
