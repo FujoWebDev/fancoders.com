@@ -1,6 +1,6 @@
 {
-  "name": "fandom-coders-kb",
-  "version": "0.0.0",
+  "name": "fandom-coders",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -15,18 +15,19 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.1",
-    "@docusaurus/preset-classic": "^2.4.1",
-    "@mdx-js/react": "^1.6.22",
-    "clsx": "^1.1.1",
-    "prism-react-renderer": "^1.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@docusaurus/core": "^3.1.1",
+    "@docusaurus/preset-classic": "^3.1.1",
+    "@mdx-js/react": "^3.0.1",
+    "clsx": "^2.1.0",
+    "docusaurus": "^1.14.7",
+    "prism-react-renderer": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.21",
-    "@tsconfig/docusaurus": "^1.0.5",
-    "typescript": "^4.6.4"
+    "@docusaurus/module-type-aliases": "^3.1.1",
+    "@tsconfig/docusaurus": "^2.0.2",
+    "typescript": "^5.4.2"
   },
   "browserslist": {
     "production": [
