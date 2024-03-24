@@ -81,11 +81,6 @@ const config = {
         },
         items: [
           {
-						href: "#join",
-            position: "left",
-            label: "Join Us",
-          },
-          {
             href: "https://github.com/FujoWebDev/fancoders.com",
             label: "GitHub",
             position: "right",

@@ -11,7 +11,7 @@ create and shape the fandom internet they want to see.
 
 ## Framework
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), an open
+This website is built using [Docusaurus 3](https://docusaurus.io/), an open
 source modern static website generator.
 
 ## Prerequisites for Local Development
@@ -19,26 +19,30 @@ source modern static website generator.
 Please be sure you have the below items installed before you begin working.
 
 - [Node.js](https://nodejs.org/en/download/)
-- [yarn](https://yarnpkg.com)
 
 ## Local Development
 
 1. Clone or fork the repo.
 2. Open a terminal shell and navigate to the directory where the repo was cloned
    locally.
-3. Run
-
+3. Run 
+   ```bash
+   $ npm install
    ```
-   $ yarn start
+	 to install the node packages needed to run the development server and make changes to the code.
+4. Run
+
+   ```bash
+   $ npm run start
    ```
 
    to start a local development server and open up a browser window. Most
    changes are reflected live without having to restart the server.
-4. Use your code editor to edit the relevant pages.
+5. Use your code editor to edit the relevant pages.
 
 > Note: Any changes you plan on pushing to the repo should be done on a branch
 > other than main, as we require pull request reviews before your changes can be
-> mered. Be sure to create a new local branch before making changes to files!
+> merged. Be sure to create a new local branch before making changes to files!
 
 <!-- TODO: Add CONTRIUTING.md contributing guide & make this link live
 

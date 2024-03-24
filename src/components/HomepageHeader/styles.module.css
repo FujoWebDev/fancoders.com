@@ -27,6 +27,12 @@
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+	gap: 10px;
+}
+
+.join {
+	padding-top: 10px;
+	width: 100%;
 }
 
 .heroLogo {
