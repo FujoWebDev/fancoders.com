@@ -45,26 +45,12 @@
   --ifm-link-hover-color: #23974a;
   --docusaurus-highlighted-code-line-bg: #f0f0f0;
   --ifm-menu-color-background-active: #f0f0f0;
-  --ifm-color-success: rgba(0, 164, 0, 0.6);
-  --ifm-color-info: rgba(84, 199, 236, 0.6);
-  --ifm-color-warning: rgba(255, 186, 0, 0.6);
-  --ifm-color-danger: rgba(250, 56, 62, 0.6);
-  --ifm-color-secondary-dark: rgba(212, 213, 216, 0.6);
-  --ifm-color-success-dark: rgba(0, 148, 0, 0.6);
-  --ifm-color-info-dark: rgba(76, 179, 212, 0.6);
-  --ifm-color-warning-dark: rgba(230, 167, 0, 0.6);
-  --ifm-color-danger-dark: rgba(225, 50, 56, 0.6);
-  --ifm-color-secondary-contrast-background: rgb(231, 231, 231);
-  --ifm-color-success-contrast-background: rgb(212, 226, 212);
-  --ifm-color-info-contrast-background: rgb(206, 217, 221);
-  --ifm-color-warning-contrast-background: rgb(226, 219, 202);
-  --ifm-color-danger-contrast-background: rgb(226, 207, 208);
+  --ifm-color-success: #8fda65;
   --ifm-font-family-base: "Comfortaa", sans-serif;
   --ifm-font-family-monospace: "Victor Mono", "Courier New", monospace;
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #f1f1f1;
   --ifm-footer-color: #383a42;
-
   --discord-pwc-role-color: #1a8870;
   --discord-wwwg-role-color: #559bff;
 }
@@ -90,20 +76,7 @@ html[data-theme="dark"] {
   --ifm-link-hover-color: #f9c859;
   --docusaurus-highlighted-code-line-bg: #44475a;
   --ifm-menu-color-background-active: #44475a;
-  --ifm-color-success: rgba(0, 164, 0, 0.6);
-  --ifm-color-info: rgba(84, 199, 236, 0.6);
-  --ifm-color-warning: rgba(255, 186, 0, 0.6);
-  --ifm-color-danger: rgba(250, 56, 62, 0.6);
-  --ifm-color-secondary-dark: rgba(212, 213, 216, 0.6);
-  --ifm-color-success-dark: rgba(0, 148, 0, 0.6);
-  --ifm-color-info-dark: rgba(76, 179, 212, 0.6);
-  --ifm-color-warning-dark: rgba(230, 167, 0, 0.6);
-  --ifm-color-danger-dark: rgba(225, 50, 56, 0.6);
-  --ifm-color-secondary-contrast-background: rgb(59, 59, 59);
-  --ifm-color-success-contrast-background: rgb(0, 44, 0);
-  --ifm-color-info-contrast-background: rgb(20, 49, 58);
-  --ifm-color-warning-contrast-background: rgb(65, 47, 0);
-  --ifm-color-danger-contrast-background: rgb(54, 13, 14);
+  --ifm-color-success: #8fda65;
   --ifm-navbar-background-color: #222430;
 }
 
@@ -155,6 +128,35 @@ html[data-theme="dark"]
   .button.button--custom.button--outline:not(.button--active):hover {
   background-color: #8be9fd;
   border: var(--ifm-button-border-width) solid #8be9fd;
+}
+
+html[data-theme="light"]
+  .button.button--custom.button--outline:not(.button--active):not(:hover) {
+  color: #007272;
+  border: var(--ifm-button-border-width) solid #007272;
+}
+
+html[data-theme="light"]
+  .button.button--custom.button--outline:not(.button--active):hover {
+  background-color: #007272;
+  border: var(--ifm-button-border-width) solid #007272;
+}
+
+@media screen and (max-width: 530px) {
+  .button.button--custom.button--outline:not(.button--active):not(:hover),
+  .button.button--custom.button--outline:not(.button--active):hover {
+    width: 75%;
+  }
+}
+
+.fullWidth {
+  display: block;
+  width: 75%;
+  margin: 0px auto;
+}
+
+.button.button--success.fullWidth {
+  color: #000000;
 }
 
 /* Header sizes for mobile */

@@ -12,23 +12,25 @@ function HomepageHeader() {
         <div>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <div className={styles.buttons}>
-            <Link
-              className="button button--outline button--primary margin-right--sm"
-              to="#who"
-            >
+            <Link className="button button--outline button--primary " to="#who">
               Who are we?
             </Link>
             <Link
-              className="button button--outline button--secondary margin-right--sm"
-              to="#goals"
-            >
+              className="button button--outline button--secondary "
+              to="#goals">
               Our Goals
             </Link>
             <Link
               className="button button--outline button--custom"
-              to="#origins"
-            >
+              to="#origins">
               Our Origins
+            </Link>
+          </div>
+          <div className={styles.join}>
+            <Link
+              className="button button--success fullWidth"
+              to="#join">
+              Join Us
             </Link>
           </div>
         </div>
